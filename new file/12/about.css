@@ -1,0 +1,78 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+background:#003366;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.page-section{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+.college-image{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:30px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+color:#003366;
+margin-bottom:20px;
+text-align:center;
+font-size:32px;
+}
+
+.page-section p{
+font-size:18px;
+line-height:1.8;
+text-align:center;
+margin-bottom:40px;
+color:#444;
+}
+
+.cards-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:300px;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#003366;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:16px;
+margin:0;
+}

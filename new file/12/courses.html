@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Courses Offered</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.cards-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    width:280px;
+    height:300px;
+    border-radius:15px;
+    overflow:hidden;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+.card-content{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    color:white;
+    z-index:1;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.card-content p{
+    line-height:1.5;
+}
+
+/* Course Images */
+
+.cse{
+    background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800');
+}
+
+.ai{
+    background-image:url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800');
+}
+
+.bca{
+    background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800');
+}
+
+.mba{
+    background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=800');
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Courses Offered</h1>
+</header>
+
+<section class="cards-container">
+
+<div class="card cse">
+    <div class="card-content">
+        <h3>B.Tech CSE</h3>
+        <p>
+        Programming, Data Structures, AI, Cloud Computing and Web Development.
+        </p>
+    </div>
+</div>
+
+<div class="card ai">
+    <div class="card-content">
+        <h3>B.Tech AI & DS</h3>
+        <p>
+        Machine Learning, Deep Learning and Data Analytics.
+        </p>
+    </div>
+</div>
+
+<div class="card bca">
+    <div class="card-content">
+        <h3>BCA</h3>
+        <p>
+        Software Development, Database Systems and Networking.
+        </p>
+    </div>
+</div>
+
+<div class="card mba">
+    <div class="card-content">
+        <h3>MBA</h3>
+        <p>
+        Marketing, Finance, Human Resources and Operations.
+        </p>
+    </div>
+</div>
+
+</section>
+
+</body>
+</html>
